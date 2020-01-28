@@ -29,11 +29,6 @@ class Create extends Component {
       return this.state.interval * 1000;
     }
   };
-  componentWillMount() {
-    axios
-      .get('http://localhost:3001/status')
-      .then(response => console.log(response));
-  }
 
   handleSubmit = status => e => {
     e.preventDefault();
@@ -109,7 +104,6 @@ class Create extends Component {
             />
             <Button
               style={{ background: this.state.background }}
-              color={this.state.background}
               onClick={this.handleSubmit(this.state.status)}
             >
               {this.state.status}
