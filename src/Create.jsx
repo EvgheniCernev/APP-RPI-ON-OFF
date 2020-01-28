@@ -59,7 +59,6 @@ class Create extends Component {
   };
 
   render() {
-    console.log(this.state.status);
     return (
       <div className='wrapper'>
         <div className='select-time'>
