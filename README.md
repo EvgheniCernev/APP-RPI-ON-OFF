@@ -1,4 +1,4 @@
 # APP-RPI-ON-OFF
 
-RUN: npm start
-Node Version: 8.14
+# RUN: npm start
+# Node Version: 8.14
